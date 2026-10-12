@@ -21,7 +21,7 @@ int main(){
 		cout<<"\nEl valor que busca SI esta dentro del arreglo."<<pos;
 	}
 	else{
-		cout<<"El valor que busca NO esta dentro del arreglo.";
+		cout<<"\nEl valor que busca NO esta dentro del arreglo.";
 	}
 	
 	return 0;
@@ -33,7 +33,7 @@ int busca(int A[],int n,int x){
 	}
 	else{
 		if(A[n-1]==x){
-			return -1;
+			return n-1;
 		}
 		else{
 			return busca(A,n-1,x);
